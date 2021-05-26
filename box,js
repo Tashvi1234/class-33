@@ -1,0 +1,31 @@
+class Box {  
+    //properties
+    constructor(x,y,w,h) {
+        this.width = w;
+        this.height = h;
+        this.boxBody;
+        
+        var boxOptions = {
+            isStatic : false, 
+            restitution : 0.8  // bounciness
+        }
+        
+        //create physics engine body
+        this.boxBody = Bodies.rectangle (x, y, this.width, this.height, boxOptions);
+        // add the physics engine body world
+        World.add (myWorld, this.boxBody);
+        console.log(this.boxBody)
+    }
+
+
+    //methods  or functions
+
+    display () {
+        
+    }
+
+
+
+
+
+}
